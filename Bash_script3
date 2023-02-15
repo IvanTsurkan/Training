@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo -n "EXTENSION: "
+read EXTENSION
+
+echo -n "Extension is "
+
+
+case $EXTENSION in
+
+    *.jpg | *.gif | *.png)
+      echo "image"
+    ;;
+
+     *.wav | *.mp3)
+      echo "audio"
+    ;;
+
+     *.txt | *.doc)
+      echo "text"
+    ;;
+
+     *)
+      echo "unknown"
+    ;;
+esac
