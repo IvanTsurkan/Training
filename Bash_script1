@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Specify the path to the directory"
+read testdir
+if [ -d $testdir ] || mkdir $testdir
+then
+echo "Done"
+else
+echo "already exist"
+fi;
