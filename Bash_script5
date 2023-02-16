@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true; do
+uptime
+cat /proc/loadavg
+sleep 5
+done
