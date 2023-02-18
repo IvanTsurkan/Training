@@ -1,0 +1,22 @@
+#!/bin/bash
+
+avgfile() {
+
+size=$(wc -c "/etc/passwd" | awk '{print $1}')
+printf "%d\n" $size
+
+quality=$(find /home/tsurkan -type f | wc -l);
+
+echo "$quality"
+
+let "total=$size/$quality"
+echo "$total"
+
+return=0
+
+}
+
+avgfile
+printf "%d\n" $size
+echo "$quality"
+echo "$total"
